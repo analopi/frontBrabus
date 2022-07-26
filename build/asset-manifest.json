@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.97bf6dc7.css",
+    "main.js": "/static/js/main.996e54c1.js",
+    "static/js/787.1b4931d3.chunk.js": "/static/js/787.1b4931d3.chunk.js",
+    "static/media/unknown.png": "/static/media/unknown.ffeef0bdf0abce296f58.png",
+    "static/media/brabus.jpg": "/static/media/brabus.f52eaa91352745e47e6e.jpg",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.97bf6dc7.css.map": "/static/css/main.97bf6dc7.css.map",
+    "main.996e54c1.js.map": "/static/js/main.996e54c1.js.map",
+    "787.1b4931d3.chunk.js.map": "/static/js/787.1b4931d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97bf6dc7.css",
+    "static/js/main.996e54c1.js"
+  ]
+}
