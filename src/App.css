@@ -1,3 +1,144 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    color: white ;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset */
+
+
+/* styles */
 .App {
   text-align: center;
 }
@@ -35,4 +176,522 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* wrappers */
+.header__wrapper {
+  position: relative;
+  min-width: 1200px;
+  min-height: 450px;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 300px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+.main_wrapper{
+  position: relative;
+  min-width: 1200px;
+  min-height: 450px;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 300px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+}
+.footer__wrapper{
+  position: relative;
+  min-width: 1200px;
+  min-height: 200px;
+  margin-left: auto;
+  margin-top: 20px;
+  padding-top: 60px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* wrappers */
+
+/* backgroun blocks */
+.back__blur__header {
+  position: absolute;
+  min-width: 1200px;
+  min-height: 800px;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("./brabus.jpg");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  z-index: 1;
+  
+}
+.back__blur__header::before{
+  content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .8);
+}
+.back__blur__main {
+  position: absolute;
+  min-width: 1200px;
+  min-height: 800px;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-image: url("./unknown.png");
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  z-index: 1;
+  
+}
+.back__blur__main::before{
+  content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .7);
+}
+.back__blur__footer{
+  position: absolute;
+  min-width: 1200px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
+  background-position: center;
+  background-color: black;
+  background-size: auto;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+
+}
+/* backgroun blocks */
+h1{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.header__wrapper h2{
+  max-width: 1000px;
+  text-align: center;
+  margin:0 auto;
+
+}
+h2{
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+
+
+
+
+/* Обработчики ошибок и валидация */
+.header__error{
+  position: absolute;
+  font-size: 16px;
+  color: red;
+  width: 250px;
+  box-sizing: border-box;
+  top:-18px;
+  left:-25px;
+}
+.header__error2{
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: red;
+  width: 250px;
+  top:-18px;
+  left:-25px;
+}
+.gosNumber__error{
+  position: absolute;
+  top: -15px;
+  left: 50px;
+  color: red;
+
+}
+.gosNumber__wrapper{
+  position: relative;
+  margin: auto;
+  width: 500px;
+}
+.mobileHard__wrapper{
+  position: relative;
+  margin: auto;
+  width: 400px;
+}
+/* Обработчики ошибок и валидация */
+
+
+
+/* header form */
+.header__form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.effect-4 {
+  border: 0;
+  padding: 5px 0 7px;
+  border: 1px solid transparent;
+  border-bottom-color: gray;
+  transition: 0.4s;
+}
+
+.effect-4:focus {
+  padding: 5px 14px 7px;
+  transition: 0.4s;
+}
+
+.effect-4~.focus-border {
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  width: 196px;
+  transition: 0.4s;
+  z-index: -1;
+}
+
+.effect-4:focus~.focus-border {
+  transition: 0.4s;
+  margin-bottom: 2px;
+  height: 36px;
+  border: 2px solid white;
+  z-index: 1;
+}
+
+
+input[type="text"] {
+  font: 15px/24px "Lato", Arial, sans-serif;
+  color: white;
+  width: 200px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+
+:focus {
+  outline: none;
+}
+
+input[type="text"] {
+  background: transparent;
+  font: 15px/24px 'Muli', sans-serif;
+  color: white;
+  width: 200px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  z-index: 5;
+}
+
+input::placeholder{
+  color: white;
+  opacity: 0.6;
+}
+.col-3 {
+  margin-right: 5px;
+  width: 200px;
+  position: relative;
+}
+/* header form */
+
+
+button.content,
+button.content-back{
+  margin-left: 15px;
+  width: 200px;
+}
+h2.content,
+h2.content-back{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+input.content,
+input.content-back{
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+
+/* animation for main */
+.content{
+  animation: plavno 1s forwards;
+}
+@keyframes plavno{
+  0%{
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  25%{
+    opacity: .25;
+  }
+  50%{
+    opacity: .5;
+
+  }
+  75%{
+    opacity: .75;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+.content-back{
+  animation: plavno2 1s forwards;
+}
+@keyframes plavno2{
+  0%{
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  25%{
+    opacity: .25;
+  }
+  50%{
+    opacity: .5;
+
+  }
+  75%{
+    opacity: .75;
+
+  }
+  100%{
+    opacity: 1;
+
+  }
+
+} 
+.element-animation {
+  margin: 2rem 0;
+  font-size: 3rem;
+  
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+/* animation for main */
+
+
+
+/* radio button styles */
+.option{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 30px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+  text-align: left;
+  box-sizing: border-box;
+}
+.radio-buttons{
+  position: relative;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.option .dot{
+  
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.option .dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: black;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3{
+  border-color: gray;
+  background-color:  black;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot,
+#option-3:checked:checked ~ .option-3 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before,
+#option-3:checked:checked ~ .option-3 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+.option span{
+  min-width: 128px;
+  font-size: 25px;
+  color: #808080;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span,
+#option-3:checked:checked ~ .option-3 span{
+  color: #fff;
+}
+/* radio button styles */
+
+@media (max-width: 720px){
+  .header__wrapper {
+    max-width: 720px;
+    max-height: 450px;
+    min-width: 720px;
+    min-height: 450px;
+    text-align: center;
+  }
+  .header__wrapper h2{
+    font-size: 28px;
+  }
+  .main_wrapper{
+    position: relative;
+    max-width: 720px;
+    max-height: 450px;
+    min-width: 720px;
+    min-height: 450px;
+    margin-left: auto;
+    margin-top: 0;
+    padding-top: 300px;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+  }
+  .footer__wrapper{
+    position: relative;
+    max-width: 720px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 400px;
+    height: 400px;   
+  }
+  .back__blur__header {
+    position: absolute;
+    max-width: 720px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-top: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("./brabus.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .back__blur__header::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .8);
+  }
+  .back__blur__main {
+    max-width: 720px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 800px;
+    background-size: cover;
+    
+  }
+  .back__blur__main::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .7);
+  }
+  .back__blur__footer{
+    max-width: 720px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 400px;
+    height: 400px;
+  }
+  .header__form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  h2.content,
+  h2.content-back{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
 }
