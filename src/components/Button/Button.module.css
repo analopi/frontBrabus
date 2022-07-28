@@ -19,3 +19,8 @@
     transition: .5s;
     background-color: silver;
   }
+  @media (max-width: 857px){
+    .header__button{
+      margin-bottom: 20px;
+    }
+  }

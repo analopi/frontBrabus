@@ -853,7 +853,7 @@ input[type="radio"]{
   .header__wrapper {
     max-width: 520px;
     max-height: 450px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 450px;
     text-align: center;
     margin: 0 auto;
@@ -865,7 +865,7 @@ input[type="radio"]{
     position: relative;
     max-width: 520px;
     max-height: 450px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 450px;
     margin: 0 auto;
     padding-top: 300px;
@@ -877,7 +877,7 @@ input[type="radio"]{
     display: block;
     max-width: 857px;
     max-height: 450px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 450px;
     margin: 0 auto;
     margin-top: 10px;
@@ -888,7 +888,7 @@ input[type="radio"]{
     display: block;
     max-width: 857px;
     max-height: 450px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 450px;
     margin: 0 auto;
     margin-bottom: 600px;
@@ -898,7 +898,7 @@ input[type="radio"]{
     position: relative;
     max-width: 520px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     margin: 0 auto;
     min-height: 400px;
     height: 400px;   
@@ -907,7 +907,7 @@ input[type="radio"]{
     position: absolute;
     max-width: 857px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 800px;
     margin-left: auto;
     margin-top: 0;
@@ -933,7 +933,7 @@ input[type="radio"]{
   .back__blur__main {
     max-width: 857px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 800px;
     background-size: cover;
     
@@ -954,7 +954,7 @@ input[type="radio"]{
     display: block;
     max-width: 857px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 880px;
     
     background-image: url("./12.jpg");
@@ -965,7 +965,7 @@ input[type="radio"]{
     display: block;
     max-width: 857px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 1050px;
     
     background-image: url("./backbus720.png");
@@ -974,14 +974,17 @@ input[type="radio"]{
   .back__blur__footer{
     max-width: 857px;
     max-height: 400px;
-    min-width: 520px;
+    min-width: 360px;
     min-height: 400px;
     height: 400px;
   }
   .header__form {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 40px;
   }
   h2.content,
@@ -991,7 +994,7 @@ input[type="radio"]{
 }
 .text-right{
   position: absolute;
-  width: 300px;
+  width: 230px;
 
   text-align: center;
   right: 10px;
@@ -999,6 +1002,31 @@ input[type="radio"]{
   z-index: 4;
 }
 .text-right h2{
-  font-size: 14px;
+  font-size: 12px;
+}
+.header__logo__img{
+  position: absolute;
+}
+.header__logo__img img{
+  position: absolute;
+  z-index: 20;
+  top:-20px;
+  left: 0;
+  width: 150px;
+  height: 150px;
+}
+input.content,
+input.content-back{
+  width: 300px;
+  margin-bottom: 40px;
+}
+.gosNumber__wrapper{
+  position: relative;
+  margin: auto;
+  width: 300px;
+}.mobileHard__wrapper{
+  position: relative;
+  margin: auto;
+  width: 300px;
 }
 }
