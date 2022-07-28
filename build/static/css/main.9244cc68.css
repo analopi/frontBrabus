@@ -336,7 +336,6 @@ table {
     width: 100%;
     z-index: 1
 }
-
 .buing_cars {
     background: linear-gradient(180deg, #c4c4c4, #000);
     background-image: url(/static/media/13.fc4f0ef3293ee854d577.jpg);
@@ -346,7 +345,6 @@ table {
     margin-top: 40px;
     min-height: 451px
 }
-
 .buing_cars_2 {
     background: linear-gradient(180deg, #c4c4c4, #000);
     background-image: url(/static/media/backbus.1f080a42e1f9b96e3683.png);
@@ -1175,7 +1173,7 @@ input[type=radio] {
     position: fixed;
     text-align: center;
     width: 90%;
-    z-index: 3
+    z-index: 21
 }
 
 .Modal_back__blur__MM4mZ {
@@ -1194,7 +1192,7 @@ input[type=radio] {
     margin-top: 40.5vh;
     opacity: 1;
     position: relative;
-    z-index: 4
+    z-index: 22
 }
 
 .Modal_wrapper__QUzNM {
@@ -1203,4 +1201,4 @@ input[type=radio] {
     width: 100%
 }
 
-/*# sourceMappingURL=main.08daa879.css.map*/
+/*# sourceMappingURL=main.9244cc68.css.map*/
