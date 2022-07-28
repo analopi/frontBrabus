@@ -5,6 +5,7 @@ import { Button } from './components/Button/Button';
 import { postModuleEazy, postModuleHard } from "./http/clientAPI";
 import Fade from 'react-reveal/Fade';
 import { Modal } from "./components/Modal/Modal";
+import companyLogo from './car.png';
 
 function App(props) {
   const [style, setStyle] = useState(true)
@@ -39,11 +40,12 @@ function App(props) {
       setOther('')
       setIsPostMobile(false)
       setViewModal(true)
-      setTimeout(() => {setAnimForModal(true)}, 1000)
-      
+      setTimeout(() => { setAnimForModal(true) }, 1000)
+
     })
 
   }
+
 
   const addInfoGosNumber = async () => {
     const response = await postModuleHard(mobileHard, other, gosNumber, value).then(() => {
@@ -54,7 +56,7 @@ function App(props) {
       setValue('')
       setIsPostMobileHard(false)
       setViewModal(true)
-      setTimeout(() => {setAnimForModal(true)}, 1000)
+      setTimeout(() => { setAnimForModal(true) }, 1000)
       setWelcome([false, false, true, false])
     })
   }
@@ -85,7 +87,7 @@ function App(props) {
   }
   const animHandler = () => {
 
-    
+
   }
 
 
@@ -93,10 +95,25 @@ function App(props) {
     <div onClick={animHandler}>
       <Modal viewModal={viewModal} animForModal={animForModal} setViewModal={setViewModal} setAnimForModal={setAnimForModal}></Modal>
       <header>
+
+        <div class="header__logo__img">
+          <Fade>
+            <img src={companyLogo} />
+          </Fade>
+        </div>
+
         <div class="back__blur__header"></div>
+        <div class="text-right">
+        <Fade>
+          <h2 >Выкуп автомобилей, без лишних слов.
+            Оставьте заявку. И получите ответ, в течение 5 минут.
+            Мы сами приедем, рассчитаемся и заберем автомобиль.
+            Один час, от заявки до получения денег.</h2>
+        </Fade>
+        </div>
         <div class="header__wrapper">
           <div class="text__logo">
-            <h1>Скупка машин в Екатеринбурге и Свердловской области</h1>
+            <h1>Выкуп машин в Екатеринбурге и Свердловской области</h1>
           </div>
           <div class="header__form" id="form_1">
             <div class="col-3">
@@ -124,8 +141,8 @@ function App(props) {
       <main>
         <div class="back__blur__main"></div>
         <div class="main_wrapper">
-          {console.log(welcome)}
-          
+
+
           {welcome[0] &&
             <Fade big>
               <div>
@@ -145,7 +162,7 @@ function App(props) {
             </div>
           }
           {welcome[2] &&
-          //d[а-я]\d{3}[а-я]{2}\d{2,3}
+            //d[а-я]\d{3}[а-я]{2}\d{2,3}
             <div>
               <h2 class={style ? "content" : "content-back"}>Укажите гос номер &#40;Так мы сможем сделать оценку автомобиля быстрее&#41;</h2>
               <div className="gosNumber__wrapper">
@@ -192,18 +209,31 @@ function App(props) {
           }
         </div>
       </main>
+      <Fade>
+        <section>
+          <div class="buing_cars"></div>
+          <div className="buing_cars_wrapper"></div>
+        </section>
+      </Fade>
+      <Fade>
+        <section>
+          <div class="buing_cars_2"></div>
+          <div className="buing_cars_wrapper_2"></div>
+        </section>
+      </Fade>
+
       <footer>
         <div class="back__blur__footer"></div>
         <div class={"footer__wrapper"}>
-        <Fade top>
-          <h2>Контакты</h2><br/>
-        </Fade>
+          <Fade top>
+            <h2>Контакты</h2><br />
+          </Fade>
           <Fade top cascade>
             <div>
               <h3>Мы находимся:<br /><br /></h3>
               <h3>Город Екатеринбург.<br /><br /></h3>
               <h3>Район Верхняя Пышма,Петрова 59Б<br /><br /></h3>
-              <h3>89222264559 Александр.</h3>
+              <h3>+7 &#40;995&#41; 676-45-59</h3>
             </div>
           </Fade>
         </div>

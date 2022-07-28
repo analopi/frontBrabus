@@ -17,7 +17,7 @@ export const Modal = (props) => {
         <div className={s.isActive} onClick={() => {props.etAnimForModal(false); setTimeout(() => {props.setViewModal(false)}, 1000)}} >
             <div className={s.wrapper} onClick={() => {props.setAnimForModal(false); setTimeout(() => {props.setViewModal(false)}, 1000)}}></div>
             <div className={s.back__blur} onClick={() => {props.setAnimForModal(false); setTimeout(() => {props.setViewModal(false)}, 1000)}}></div>
-            <p>Успешно</p>
+            <p onClick={() => {props.setAnimForModal(false); setTimeout(() => {props.setViewModal(false)}, 1000)}}>Успешно</p>
         </div>
         </Fade>}
         </div>

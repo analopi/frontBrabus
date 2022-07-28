@@ -112,6 +112,7 @@ body {
     color: white ;
 }
 
+
 ol,
 ul {
     list-style: none;
@@ -214,6 +215,30 @@ table {
   z-index: 2;
   width: 100%;
 }
+.buing_cars_wrapper{
+  position: relative;
+  min-width: 1200px;
+  min-height: 450px;
+  margin-left: auto;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 61px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+}
+.buing_cars_wrapper_2{
+  position: relative;
+  min-width: 1200px;
+  min-height: 450px;
+  margin-left: auto;
+  margin-top: -20px;
+  padding-top: 0;
+  margin-bottom: 180px;
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+}
 .footer__wrapper{
   position: relative;
   min-width: 1200px;
@@ -225,6 +250,17 @@ table {
   z-index: 2;
   width: 100%;
   box-sizing: border-box;
+}
+.header__logo__img{
+  position: absolute;
+}
+.header__logo__img img{
+  position: absolute;
+  z-index: 20;
+  top:-20px;
+  left: 0;
+  width: 200px;
+  height: 200px;
 }
 /* wrappers */
 
@@ -239,7 +275,7 @@ table {
   background-repeat: no-repeat;
   background-image: url("./brabus.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   width: 100%;
   z-index: 1;
   
@@ -255,6 +291,48 @@ table {
 	right: 0;
 	bottom: 0;
 	background-color:rgba(0, 0, 0, .8);
+}
+.buing_cars{
+  position: absolute;
+  min-width: 1200px;
+  min-height: 451px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 100000px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #C4C4C4, #000000);
+  background-image: url("./13.jpg");
+  background-position: center;
+  background-size:auto ;
+  width: 100%;
+  z-index: 1;
+}
+.buing_cars_2{
+  position: absolute;
+  min-width: 1200px;
+  min-height: 640px;
+  margin-left: auto;
+  margin-top: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom, #C4C4C4, #000000);
+  background-image: url("./backbus.png");
+  background-position: center;
+  background-size:auto ;
+  width: 100%;
+  z-index: 1;
+}
+.buing_cars::before{
+  content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .back__blur__main {
   position: absolute;
@@ -295,6 +373,7 @@ table {
   background-size: auto;
   width: 100%;
   height: 400px;
+
   z-index: 1;
 
 }
@@ -314,6 +393,18 @@ h2{
 }
 h3{
   font-size: 24px;
+}
+.text-right{
+  position: absolute;
+  width: 400px;
+
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+}
+.text-right h2{
+  font-size: 20px;
 }
 
 
@@ -596,17 +687,40 @@ input[type="radio"]{
   color: #fff;
 }
 /* radio button styles */
-
-@media (max-width: 720px){
+@media (max-width: 1200px){
+  
   .header__wrapper {
     max-width: 720px;
     max-height: 450px;
     min-width: 720px;
     min-height: 450px;
+    margin: 0 auto;
     text-align: center;
   }
   .header__wrapper h2{
-    font-size: 28px;
+    font-size: 22px;
+  }
+  .buing_cars_wrapper{
+    display: block;
+    max-width: 720px;
+    max-height: 550px;
+    min-width: 720px;
+    min-height: 550px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: -49px;
+    text-align: center;
+  }
+  .buing_cars_wrapper_2{
+    display: block;
+    max-width: 720px;
+    max-height: 550px;
+    min-width: 720px;
+    min-height: 550px;
+    margin: 0 auto;
+    
+    margin-bottom: -70px;
+    text-align: center;
   }
   .main_wrapper{
     position: relative;
@@ -614,8 +728,7 @@ input[type="radio"]{
     max-height: 450px;
     min-width: 720px;
     min-height: 450px;
-    margin-left: auto;
-    margin-top: 0;
+    margin: 0 auto;
     padding-top: 300px;
     text-align: center;
     z-index: 2;
@@ -626,12 +739,33 @@ input[type="radio"]{
     max-width: 720px;
     max-height: 400px;
     min-width: 720px;
+    margin: 0 auto;
     min-height: 400px;
     height: 400px;   
   }
+  .buing_cars{
+    display: block;
+    max-width: 1216px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 461px;
+    
+    background-image: url("./15.png");
+    background-size: auto auto;
+  }
+  .buing_cars_2{
+    display: block;
+    max-width: 1214px;
+    max-height: 400px;
+    min-width: 720px;
+    min-height: 480px;
+    
+    background-image: url("./backbus1216.png");
+    background-size: auto auto;
+  }
   .back__blur__header {
     position: absolute;
-    max-width: 720px;
+    max-width: 1200px;
     max-height: 400px;
     min-width: 720px;
     min-height: 800px;
@@ -657,10 +791,10 @@ input[type="radio"]{
     background-color:rgba(0, 0, 0, .8);
   }
   .back__blur__main {
-    max-width: 720px;
+    max-width: 1200px;
     max-height: 400px;
-    min-width: 720px;
-    min-height: 800px;
+    min-width: 720px;;
+    min-height: 900px;
     background-size: cover;
     
   }
@@ -677,7 +811,7 @@ input[type="radio"]{
     background-color:rgba(0, 0, 0, .7);
   }
   .back__blur__footer{
-    max-width: 720px;
+    max-width: 1200px;
     max-height: 400px;
     min-width: 720px;
     min-height: 400px;
@@ -691,7 +825,180 @@ input[type="radio"]{
   }
   h2.content,
   h2.content-back{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.text-right{
+  position: absolute;
+  width: 350px;
+
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+}
+.text-right h2{
+  font-size: 16px;
+}
+}
+
+
+
+
+
+@media (max-width: 857px){
+  h1{
+    font-size: 34px;
+  }
+  .header__wrapper {
+    max-width: 520px;
+    max-height: 450px;
+    min-width: 520px;
+    min-height: 450px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .header__wrapper h2{
+    font-size: 22px;
+  }
+  .main_wrapper{
+    position: relative;
+    max-width: 520px;
+    max-height: 450px;
+    min-width: 520px;
+    min-height: 450px;
+    margin: 0 auto;
+    padding-top: 300px;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+  }
+  .buing_cars_wrapper{
+    display: block;
+    max-width: 857px;
+    max-height: 450px;
+    min-width: 520px;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 470px;
+    text-align: center;
+  }
+  .buing_cars_wrapper_2{
+    display: block;
+    max-width: 857px;
+    max-height: 450px;
+    min-width: 520px;
+    min-height: 450px;
+    margin: 0 auto;
+    margin-bottom: 600px;
+    text-align: center;
+  }
+  .footer__wrapper{
+    position: relative;
+    max-width: 520px;
+    max-height: 400px;
+    min-width: 520px;
+    margin: 0 auto;
+    min-height: 400px;
+    height: 400px;   
+  }
+  .back__blur__header {
+    position: absolute;
+    max-width: 857px;
+    max-height: 400px;
+    min-width: 520px;
+    min-height: 800px;
+    margin-left: auto;
+    margin-top: 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image: url("./brabus.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .back__blur__header::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .8);
+  }
+  .back__blur__main {
+    max-width: 857px;
+    max-height: 400px;
+    min-width: 520px;
+    min-height: 800px;
+    background-size: cover;
+    
+  }
+  .back__blur__main::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .7);
+  }
+  .buing_cars{
+    display: block;
+    max-width: 857px;
+    max-height: 400px;
+    min-width: 520px;
+    min-height: 880px;
+    
+    background-image: url("./12.jpg");
+    background-size: auto auto;
+    z-index: 0;
+  }
+  .buing_cars_2{
+    display: block;
+    max-width: 857px;
+    max-height: 400px;
+    min-width: 520px;
+    min-height: 1050px;
+    
+    background-image: url("./backbus720.png");
+    background-size: auto auto;
+  }
+  .back__blur__footer{
+    max-width: 857px;
+    max-height: 400px;
+    min-width: 520px;
+    min-height: 400px;
+    height: 400px;
+  }
+  .header__form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  h2.content,
+  h2.content-back{
   font-size: 30px;
   margin-bottom: 30px;
+}
+.text-right{
+  position: absolute;
+  width: 300px;
+
+  text-align: center;
+  right: 10px;
+  top: 10px;
+  z-index: 4;
+}
+.text-right h2{
+  font-size: 14px;
 }
 }
