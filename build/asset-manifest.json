@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9244cc68.css",
+    "main.js": "/static/js/main.870ec403.js",
+    "static/js/787.1b4931d3.chunk.js": "/static/js/787.1b4931d3.chunk.js",
+    "static/media/unknown.png": "/static/media/unknown.ffeef0bdf0abce296f58.png",
+    "static/media/15.png": "/static/media/15.3d1cd97ba2b2480812d0.png",
+    "static/media/brabus.jpg": "/static/media/brabus.f52eaa91352745e47e6e.jpg",
+    "static/media/car.png": "/static/media/car.f4592f42400ff2bc13d6.png",
+    "static/media/backbus720.png": "/static/media/backbus720.edf0410b7573d62ccee5.png",
+    "static/media/backbus.png": "/static/media/backbus.1f080a42e1f9b96e3683.png",
+    "static/media/12.jpg": "/static/media/12.8284cad94ba937ed1fd8.jpg",
+    "static/media/13.jpg": "/static/media/13.fc4f0ef3293ee854d577.jpg",
+    "static/media/backbus1216.png": "/static/media/backbus1216.95aa185e20715c4353b8.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.9244cc68.css.map": "/static/css/main.9244cc68.css.map",
+    "main.870ec403.js.map": "/static/js/main.870ec403.js.map",
+    "787.1b4931d3.chunk.js.map": "/static/js/787.1b4931d3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9244cc68.css",
+    "static/js/main.870ec403.js"
+  ]
+}
